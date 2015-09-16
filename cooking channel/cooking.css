@@ -1,0 +1,118 @@
+﻿body {
+    overflow: hidden;
+}
+
+
+.flyin-wrapper {
+    height: 6em;
+    padding: 0;
+    position: absolute;
+    top: calc(100% - 10em);
+    right: 2em;
+    width: 16em;
+    overflow: hidden;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+    .flyin-wrapper.in {
+        -moz-animation-name: slideinpopover;
+        -o-animation-name: slideinpopover;
+        -webkit-animation-name: slideinpopover;
+        -moz-transform: translate3D(0, 0, 0);
+        -ms-transform: translate3D(0, 0, 0);
+        -o-transform: translate3D(0, 0, 0);
+        -webkit-transform: translate3D(0, 0, 0);
+        transform: translate3D(0, 0, 0);
+        animation-name: slideinpopover;
+    }
+
+
+
+.flyin-title {
+    background: #7F0000;
+    color: #ff4c4c;
+    height: 2em;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+    .flyin-title h1 {
+        font-size: 1em;
+        margin: .4em 0 .4em .4em;
+    }
+
+.flyin-content {
+    color: #7f0000;
+    background: #FF4C4C;
+    height: 6em;
+    margin: 0;
+    padding: .5% .75%;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+@-moz-keyframes slideinpopover {
+    0% {
+        -moz-transform: translate3d(150%, 0, 0);
+        transform: translate3d(150%, 0, 0);
+        height: 2em;
+        visibility: visible;
+    }
+
+    75% {
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        height: 2em;
+    }
+
+    100% {
+        height: 6em;
+    }
+}
+
+@-webkit-keyframes slideinpopover {
+    0% {
+        -webkit-transform: translate3d(150%, 0, 0);
+        transform: translate3d(150%, 0, 0);
+        height: 2em;
+        visibility: visible;
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        height: 2em;
+    }
+
+    100% {
+        height: 6em;
+    }
+}
+
+@keyframes slideinpopover {
+    0% {
+        transform: translate3d(150%, 0, 0);
+        height: 2em;
+        visibility: visible;
+    }
+
+    75% {
+        transform: translate3d(0, 0, 0);
+        height: 2em;
+    }
+
+    100% {
+        height: 6em;
+    }
+}

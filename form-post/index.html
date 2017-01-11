@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+
+	<title>HTML5 File Upload Via AJAX to AWS API Gateway</title>
+
+
+</head>
+
+<body>
+
+	<form id="upload" method="POST" enctype="multipart/form-data">
+
+		<fieldset>
+			<legend>HTML File Upload</legend>
+
+			<div>
+				<label for="fileselect">Files to upload:</label>
+				<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+				<div id="filedrag">or drop files here</div>
+			</div>
+
+			<div id="submitbutton">
+				<button type="submit">Upload Files</button>
+			</div>
+
+		</fieldset>
+
+	</form>
+
+	<script>
+
+//https://www.sitepoint.com/html5-ajax-file-upload/
+
+        // file selection
+        function FileSelectHandler(e) {
+
+            // cancel event and hover styling
+//            FileDragHover(e);
+
+            // fetch FileList object
+            var files = e.target.files || e.dataTransfer.files;
+
+            // process all File objects
+            for (var i = 0, f; f = files[i]; i++) {
+                UploadFile(f);
+            }
+
+        }
+
+        // upload JPEG files
+        function UploadFile(file) {
+
+            var xhr = new XMLHttpRequest();
+
+            if (xhr.upload && 
+                (file.type === "image/jpeg" || file.type === "image/jpg")
+                 && file.size <= 300000){
+
+                // start upload
+                xhr.open("POST", "https://nrrltb378h.execute-api.us-east-1.amazonaws.com/dev/image", true);
+                //"https://vqs4s5gzy5.execute-api.us-east-1.amazonaws.com/fileupload", true);
+                xhr.overrideMimeType('text/plain; charset=x-user-defined-binary');
+          //      xhr.setRequestHeader("X_FILENAME", file.name);
+                xhr.setRequestHeader("Authorization", "AWS4-HMAC-SHA256 Credential=AKIAIOREZNYECT4GARFA/20161208/us-east-1/execute-api/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=85e7b314c9222df7f3278e99b8a5fc6f8fd84b745faa5075095975a5ab262f3e");
+                xhr.setRequestHeader("X-Amz-Date", "20161208T202018Z");
+                xhr.setRequestHeader("Content-Type", "image/jpg");
+                xhr.setRequestHeader("mosaic-title", "this is the image caption");
+                xhr.setRequestHeader("mosaic-tags", "advent, sermons. foo bar");
+                xhr.setRequestHeader("filename", file.name);
+                xhr.send(file);
+
+                //xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                //xhr.send(JSON.stringify({name:"John Rambo", time:"2pm"}))
+
+            }
+
+        }
+
+        var fileselect = document.getElementById("fileselect");
+
+		// file select
+		fileselect.addEventListener("change", FileSelectHandler, false);
+
+
+    </script>
+</body>
+
+</html>

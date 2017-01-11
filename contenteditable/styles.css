@@ -1,0 +1,266 @@
+
+.target-html{
+    min-height: 800px;
+    height: 80%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.te-html{
+    display: none;
+}
+
+.container {
+    width: 90%;
+}
+
+.row>.col,
+.row>[class^="col-"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+[contenteditable="true"] {
+    color: #C00;
+}
+
+.hero-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(135deg, #005c84 100%, #786dd1 0);
+}
+
+.header__hero {
+    position: relative;
+}
+
+.primary-message,
+.sub-message {
+    position: absolute;
+    text-align: center;
+    color: #fefefe;
+    text-shadow: #222222 1px 1px;
+}
+
+.primary-message {
+    line-height: 2rem;
+    font-size: 2rem;
+    padding: 5%;
+}
+
+.sub-message {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 3%;
+}
+
+@media (min-width: 732px) {
+    .primary-message {
+        line-height: 3rem;
+        font-size: 3rem;
+        padding: 7% 5%;
+    }
+    .sub-message {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+        padding: 5%;
+    }
+    .here-container-top .primary-message {
+        top: 2%;
+    }
+    .here-container-top .sub-message {
+        bottom: calc(3rem + 2%);
+    }
+    .here-container-bottom .primary-message {
+        bottom: calc(5% + 1.5rem);
+    }
+    .here-container-bottom .sub-message {
+        bottom: 2%;
+    }
+}
+
+@media (min-width: 993px) {
+    .primary-message {
+        line-height: 4rem;
+        font-size: 4rem;
+        padding: 8% 5%;
+    }
+    .sub-message {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.75rem;
+        font-size: 1.75rem;
+    }
+    .here-container-bottom .primary-message {
+        bottom: calc(5% + 1.75rem);
+    }
+    .here-container-bottom .sub-message {
+        bottom: 2.5%;
+    }
+    .here-container-top .primary-message {
+        top: 3%;
+    }
+    .here-container-top .sub-message {
+        bottom: calc(4rem + 4%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .primary-message {
+        line-height: 5rem;
+        font-size: 5rem;
+        padding: 7% 5%;
+    }
+    .sub-message {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 2.25rem;
+        font-size: 2.25rem;
+        padding: 4%;
+    }
+    .here-container-bottom .primary-message {
+        bottom: calc(5% + 2.25rem);
+    }
+    .here-container-bottom .sub-message {
+        bottom: 3%;
+    }
+    .here-container-top .primary-message {
+        top: 4%;
+    }
+    .here-container-top .sub-message {
+        bottom: calc(5rem + 5%);
+    }
+}
+
+@media (min-width: 1600px) {
+    .primary-message {
+        line-height: 5rem;
+        font-size: 5rem;
+    }
+    .sub-message {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 3rem;
+        font-size: 3rem;
+        padding: 5%;
+    }
+    .here-container-bottom .primary-message {
+        bottom: calc(5% + 3rem);
+    }
+    .here-container-bottom .sub-message {
+        bottom: 4%;
+    }
+    .here-container-top .primary-message {
+        top: 5%;
+    }
+    .here-container-top .sub-message {
+        bottom: calc(5rem + 6%);
+    }
+}
+
+.welcome-to-crossway:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-132x88.jpg');
+}
+
+@media (min-width: 132px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-177x118.jpg');
+        background-size: 177px;
+    }
+}
+
+@media (min-width: 177px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-237x158.jpg');
+        background-size: 237px;
+    }
+}
+
+@media (min-width: 237px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-317x211.jpg');
+        background-size: 317px;
+    }
+}
+
+@media (min-width: 317px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-423x282.jpg');
+        background-size: 423px;
+    }
+}
+
+@media (min-width: 423px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-564x377.jpg');
+        background-size: 564px;
+    }
+}
+
+@media (min-width: 564px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-753x503.jpg');
+        background-size: 753px;
+    }
+}
+
+@media (min-width: 753px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-1005x671.jpg');
+        background-size: 1005px;
+    }
+}
+
+@media (min-width: 1005px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-1341x895.jpg');
+        background-size: 1341px;
+    }
+}
+
+@media (min-width: 1341px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-1788x1194.jpg');
+        background-size: 1788px;
+    }
+}
+
+@media (min-width: 1788px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-2385x1593.jpg');
+        background-size: 2385px;
+    }
+}
+
+@media (min-width: 2385px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-3180x2124.jpg');
+        background-size: 3180px;
+    }
+}
+
+@media (min-width: 3180px) {
+    .welcome-to-crossway:before {
+        background-image: url('https://crosswaytoday.org/imgs/welcome-to-crossway-smile-4240x2832.jpg');
+        background-size: 4240px;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+}

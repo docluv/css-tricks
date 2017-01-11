@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Love2Dev Page Content Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="row flex-items-xl-top">
+            <button class="btn btn-edit">
+            Edit</button>
+            <button class="btn btn-cancel hidden">
+            Cancel</button>
+            <button class="btn btn-save btn-default hidden">
+            Save</button>
+        </header>
+        <div class="target-html content-editor">
+        </div>
+    </div><textarea class="te-html"></textarea>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="editor.js"></script>
+    <script>
+
+    contentEditor();
+
+        // function CopyToClipboard(text) {
+        //     Copied = text.createTextRange();
+        //     Copied.execCommand("Copy");
+        // }
+
+
+        // var copyBtn = document.querySelector(".btn-copy");
+
+        // copyBtn.addEventListener("click", function (e) {
+
+        //     var target = document.querySelector(".target-html"),
+        //         holdtext = document.querySelector(".te-html");
+
+        //     holdtext.innerText = target.innerHTML;
+
+        //     holdtext.select();
+        //     document.execCommand('copy');
+
+
+        // });
+
+        // function makeEditable(ele){
+
+        //     ele.setAttribute("contenteditable", "true");
+        //     ele.contentEditable = 'true';
+
+        // }
+
+        // function removeEditable(ele){
+
+        //     ele.removeAttribute("contenteditable");
+        //     ele.contentEditable = 'false';
+
+        // }
+
+        //targets = document.querySelectorAll("[class^='col-']");
+
+        //document.designMode = 'on';
+
+        // for(var i = 0; i < targets.length; i++){
+
+        //     targets[i].addEventListener("dblclick", function(e){
+
+        //         var target = e.target;
+
+        //         if(target.hasAttribute("contenteditable")){
+        //             makeEditable(target);
+        //         }else{
+        //             removeEditable(target);
+        //         }
+
+        //     });
+
+        // }
+
+
+        //https://www.sitepoint.com/javascript-copy-to-clipboard/
+    </script>
+</body>
+
+</html>

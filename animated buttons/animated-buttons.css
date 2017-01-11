@@ -1,0 +1,122 @@
+﻿
+h1 {
+    color: #333;
+    font-family: Open Sans Condensed;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40;
+}
+
+    h1:hover {
+        font-size: 2.5em;
+    }
+
+        h1:hover:before,
+        h1:hover:after {
+            font-style: italic;
+            font-size: 0.5em;
+        }
+
+        h1:hover:before {
+            content: "some ";
+        }
+
+        h1:hover:after {
+            content: " by NobodyRocks";
+        }
+/*i'm a button, click me!*/
+
+button {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background-color: #3498db;
+    font-family: Open Sans Condensed;
+    text-decoration: none;
+    font-size: 1.8em;
+    border: 2px #fff solid;
+    margin: 10px 0 0 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+    /*magic starts here*/
+
+    button:hover {
+        cursor: pointer;
+    }
+
+.highlight:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.fade:hover {
+    border: 0;
+    color: #099;
+    opacity: 0;
+}
+
+.boom:hover {
+    color: #099;
+    border: #099;
+    opacity: 0;
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+    transform: scale(2, 2);
+}
+
+.focus:hover {
+    border-width: 20px;
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.knit:hover {
+    height: 0;
+}
+
+.shrink:hover {
+    -webkit-transform: scale(0.0, 0.0);
+    -moz-transform: scale(0.0, 0.0);
+    -ms-transform: scale(0.0, 0.0);
+    -o-transform: scale(0.0, 0.0);
+    transform: scale(0.0, 0.0);
+}
+
+.squeeze:hover {
+    -webkit-transform: scale(1.5, 0.0);
+    -moz-transform: scale(1.5, 0.0);
+    -ms-transform: scale(1.5, 0.0);
+    -o-transform: scale(1.5, 0.0);
+    transform: scale(1.5, 0.0);
+}
+
+.deform:hover {
+    -webkit-transform: skew(45deg, 45deg);
+    -moz-transform: skew(45deg, 45deg);
+    -ms-transform: skew(45deg, 45deg);
+    -o-transform: skew(45deg, 45deg);
+    transform: skew(45deg, 45deg);
+}
+/*for the sake of responsiveness...*/
+
+@media (max-width: 330) {
+    #container {
+        width: 100%;
+    }
+
+    button {
+        width: 90%;
+        margin: 5% 0 0 5%;
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "title": "A Sample Page to Test Live Editing Concept",
+  "keywords": "this is the page keywords, placed in the Keywords META element",
+  "description": "this is the page description, placed in the description META element",
+  "featuredImg": "https://love2dev.com/img/frightened_child-986x1200.jpg",
+  "manifest": "manifest.json",
+  "body": "<div class=\"container\">  <div class=\"row flex-items-xl-top\">    <div class=\"col-xl-12 hero-container here-container-bottom welcome-to-crossway\">        <div class=\"header__hero\" style=\"height: 765px;\">            <div class=\"primary-message\">                Helping People Make Life Work            </div>            <div class=\"sub-message\">                Because Life is Hard, You Need to Know The One That Designed Life            </div>        </div>    </div>  </div>  <div class=\"row flex-items-xs-middle\">    <div class=\"col-xs\">      One of three columns    </div>    <div class=\"col-xs\">      One of three columns    </div>    <div class=\"col-xs\">      One of three columns    </div>  </div>  <div class=\"row flex-items-xs-bottom\">    <div class=\"col-xs\">      One of three columns    </div>    <div class=\"col-xs\">      One of three columns    </div>    <div class=\"col-xs\">      One of three columns    </div>  </div></div>"
+}
